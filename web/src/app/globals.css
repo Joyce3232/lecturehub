@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-black antialiased;
+  }
+}
+
+/* Swiss Keynote Markdown & Slide typography */
+.wiki-prose h1 {
+  @apply text-2xl font-black tracking-tight text-black mb-5;
+}
+.wiki-prose h2 {
+  @apply text-2xl font-black tracking-tight text-black mt-5 mb-4 border-b-2 border-black pb-1.5;
+}
+.wiki-prose h3 {
+  @apply text-lg font-extrabold text-black mt-4 mb-2;
+}
+.wiki-prose p {
+  @apply text-neutral-900 leading-relaxed mb-3.5;
+}
+.wiki-prose ul {
+  @apply list-square pl-6 space-y-1.5 mb-4 text-neutral-900;
+}
+.wiki-prose ol {
+  @apply list-decimal pl-6 space-y-1.5 mb-4 text-neutral-900;
+}
+.wiki-prose blockquote {
+  @apply border-l-4 border-orange-600 bg-neutral-100 px-4 py-3 my-4 text-black font-medium;
+}
+.wiki-prose code {
+  @apply font-mono text-sm bg-neutral-100 text-orange-600 border border-neutral-200 px-1.5 py-0.5;
+}
+.wiki-prose pre {
+  @apply bg-black text-white p-4 overflow-x-auto my-4 text-sm border-2 border-black;
+}
+.wiki-prose pre code {
+  @apply bg-transparent text-inherit border-none p-0;
+}
+.wiki-prose table {
+  @apply w-full border-collapse my-4 text-sm border-2 border-black;
+}
+.wiki-prose th {
+  @apply bg-black text-white border border-black px-3 py-2 text-left font-bold uppercase tracking-wider text-xs;
+}
+.wiki-prose td {
+  @apply border border-neutral-300 px-3 py-2 text-neutral-900 align-top;
+}
+.wiki-prose a {
+  @apply text-orange-600 hover:text-black underline underline-offset-2 font-bold;
+}
